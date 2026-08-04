@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prinston Sarfo Adu Tutu — Cloud Computing Student Portfolio</title>
+  <meta name="description" content="Portfolio of Prinston Sarfo Adu Tutu, a Cloud Computing Technologies student at George Brown College, building experience in AWS, Microsoft 365, Windows Server, Linux, networking and DevOps." />
+
+  <!-- Fonts: Space Grotesk (display), Inter (body), JetBrains Mono (terminal/labels) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- If the Google Fonts CDN is unreachable, styles.css defines system-font fallbacks so the page still renders correctly. -->
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Skip link for keyboard/screen-reader users -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- =============================== -->
+  <!-- STICKY NAVIGATION -->
+  <!-- =============================== -->
+  <header class="site-header" id="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a href="#home" class="nav__brand" aria-label="Prinston Sarfo Adu Tutu — home">
+        <span class="nav__prompt">~$</span> psat<span class="nav__cursor" aria-hidden="true">_</span>
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#experience" class="nav__link">Experience</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#education" class="nav__link">Education</a></li>
+        <li><a href="#credentials" class="nav__link">Credentials</a></li>
+        <li><a href="#resume" class="nav__link">Resume</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch to light theme" aria-pressed="false">
+          <svg class="theme-toggle__icon theme-toggle__icon--moon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          <svg class="theme-toggle__icon theme-toggle__icon--sun" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.6"/><path d="M12 2.5v2.4M12 19.1v2.4M21.5 12h-2.4M4.9 12H2.5M18.4 5.6l-1.7 1.7M7.3 16.7l-1.7 1.7M18.4 18.4l-1.7-1.7M7.3 7.3 5.6 5.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="nav__scrim" id="navScrim"></div>
+
+  <main id="main-content">
+
+    <!-- =============================== -->
+    <!-- HERO -->
+    <!-- =============================== -->
+    <section class="hero" id="home">
+      <div class="hero__network" aria-hidden="true" id="heroNetwork">
+        <!-- Decorative node-graph representing cloud infrastructure, drawn by JS onto this SVG canvas -->
+        <svg viewBox="0 0 800 600" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+          <g id="networkLayer"></g>
+        </svg>
+      </div>
+
+      <div class="container hero__inner">
+        <p class="eyebrow"><span class="eyebrow__prompt">$</span> whoami</p>
+        <h1 class="hero__name">Prinston Sarfo Adu Tutu</h1>
+        <p class="hero__title">Cloud Computing Student · Aspiring Cloud &amp; DevOps Engineer</p>
+        <p class="hero__intro">
+          I'm a Cloud Computing Technologies student at George Brown College in Toronto, building
+          hands-on skills across AWS, Microsoft 365, Windows Server, Linux, networking and automation.
+          I'm AWS Certified Cloud Practitioner and working toward a career supporting secure, reliable
+          cloud and IT infrastructure.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary">View My Work</a>
+          <a href="#resume" class="btn btn--secondary">View Resume</a>
+          <a href="#contact" class="btn btn--ghost">Contact Me</a>
+        </div>
+
+        <div class="hero__social">
+          <a href="https://github.com/Prinstonn" target="_blank" rel="noopener noreferrer" class="hero__social-link" aria-label="GitHub profile (opens in a new tab)">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12.28 11.53 11.53 0 0 0 8.4 23.3c.58.1.79-.25.79-.56v-2c-3.22.7-3.9-1.4-3.9-1.4-.53-1.34-1.29-1.7-1.29-1.7-1.06-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.04 1.77 2.72 1.26 3.38.96.1-.75.4-1.26.74-1.55-2.57-.29-5.27-1.28-5.27-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.7 5.4-5.28 5.69.42.36.78 1.07.78 2.16v3.2c0 .32.21.67.8.56A11.53 11.53 0 0 0 23.5 12.28 11.5 11.5 0 0 0 12 .5Z"/></svg>
+            <span>GitHub</span>
+          </a>
+          <a href="https://www.linkedin.com/in/prinston-sarfo-adu-tutu-aa6944201" target="_blank" rel="noopener noreferrer" class="hero__social-link" aria-label="LinkedIn profile (opens in a new tab)">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+      </div>
+
+      <a href="#about" class="hero__scroll-cue" aria-label="Scroll to about section">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- =============================== -->
+    <!-- ABOUT / PROFILE -->
+    <!-- =============================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <p class="eyebrow reveal"><span class="eyebrow__prompt">$</span> cat about.md</p>
+        <h2 class="section__title reveal">About Me</h2>
+
+        <div class="about__grid">
+          <p class="about__bio reveal">
+            I'm an international student from Ghana currently studying Cloud Computing Technologies at
+            George Brown College in Toronto, Ontario. My focus is on building practical, job-ready skills
+            across cloud platforms, systems administration, networking and automation — the areas that
+            keep modern infrastructure running securely and reliably.
+            <br /><br />
+            Day to day, I work with AWS fundamentals, Microsoft 365 administration, Windows Server,
+            Active Directory, Linux, and virtualization tools like Hyper-V and VMware. I'm also developing
+            my DevOps toolkit through Git, Vagrant, Nginx, and infrastructure automation exercises, and I
+            hold the AWS Certified Cloud Practitioner certification.
+            <br /><br />
+            I'm actively building experience through coursework, personal labs, and past roles in backend
+            support and IT/business development. My goal is to grow into a Cloud or DevOps Engineer role
+            where I can help teams deliver secure, dependable technology environments.
+          </p>
+
+          <aside class="about__facts reveal" aria-label="Quick facts">
+            <ul class="fact-list">
+              <li><span class="fact-list__label">Program</span><span class="fact-list__value">Cloud Computing Technologies</span></li>
+              <li><span class="fact-list__label">Institution</span><span class="fact-list__value">George Brown College</span></li>
+              <li><span class="fact-list__label">Location</span><span class="fact-list__value">Toronto, Ontario, Canada</span></li>
+              <li><span class="fact-list__label">Certification</span><span class="fact-list__value">AWS Certified Cloud Practitioner</span></li>
+              <li><span class="fact-list__label">Target roles</span><span class="fact-list__value">Cloud / DevOps / Cloud Support / SysAdmin</span></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================== -->
+    <!-- SKILLS -->
+    <!-- =============================== -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <p class="eyebrow reveal"><span class="eyebrow__prompt">$</span> ls skills/</p>
+        <h2 class="section__title reveal">Technical Skills</h2>
+        <p class="section__lede reveal">Organized by the areas I'm developing through coursework and hands-on labs.</p>
+
+        <div class="skills__grid">
+
+          <div class="skill-card reveal">
+            <h3 class="skill-card__title">Cloud &amp; Microsoft</h3>
+            <ul class="skill-card__list">
+              <li>AWS fundamentals</li>
+              <li>Microsoft 365 administration</li>
+              <li>Microsoft Entra ID fundamentals</li>
+              <li>Microsoft Graph PowerShell</li>
+              <li>Microsoft Defender fundamentals</li>
+              <li>SharePoint administration fundamentals</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3 class="skill-card__title">Systems Administration</h3>
+            <ul class="skill-card__list">
+              <li>Windows 10 &amp; Windows 11</li>
+              <li>Windows Server 2019</li>
+              <li>Active Directory Domain Services</li>
+              <li>Group Policy</li>
+              <li>DNS &amp; DHCP</li>
+              <li>Windows Deployment Services</li>
+              <li>Hyper-V &amp; Hyper-V Replica</li>
+              <li>Failover clustering fundamentals</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3 class="skill-card__title">Linux &amp; DevOps</h3>
+            <ul class="skill-card__list">
+              <li>Linux administration</li>
+              <li>Git &amp; GitHub</li>
+              <li>Vagrant</li>
+              <li>Infrastructure automation fundamentals</li>
+              <li>Nginx</li>
+              <li>Apache Tomcat</li>
+              <li>MariaDB / MySQL</li>
+              <li>RabbitMQ</li>
+              <li>Memcached</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3 class="skill-card__title">Networking</h3>
+            <ul class="skill-card__list">
+              <li>TCP/IP</li>
+              <li>IPv4 addressing</li>
+              <li>Subnetting</li>
+              <li>Routing</li>
+              <li>NAT</li>
+              <li>Cisco Packet Tracer</li>
+              <li>Network troubleshooting</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3 class="skill-card__title">Programming &amp; Tools</h3>
+            <ul class="skill-card__list">
+              <li>HTML &amp; CSS</li>
+              <li>JavaScript</li>
+              <li>Node.js</li>
+              <li>SQL</li>
+              <li>PowerShell</li>
+              <li>VMware Workstation Pro</li>
+              <li>Visual Studio Code</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================== -->
+    <!-- EXPERIENCE -->
+    <!-- =============================== -->
+    <section class="section" id="experience">
+      <div class="container">
+        <p class="eyebrow reveal"><span class="eyebrow__prompt">$</span> git log --experience</p>
+        <h2 class="section__title reveal">Work Experience</h2>
+
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <div class="timeline__head">
+                <h3 class="timeline__role">Backend &amp; Business Development Intern</h3>
+                <span class="timeline__date">Jan 2024 – Dec 2024</span>
+              </div>
+              <p class="timeline__org">Manages Homes / Cycas Labs · Remote</p>
+              <ul class="timeline__list">
+                <li>Supported development of REST APIs using Node.js and SQL</li>
+                <li>Assisted with technical documentation</li>
+                <li>Researched cloud deployment solutions</li>
+                <li>Contributed to business and product-development activities</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline__item reveal">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <div class="timeline__head">
+                <h3 class="timeline__role">Business Development / IT Support</h3>
+                <span class="timeline__date">Nov 2022 – Dec 2023</span>
+              </div>
+              <p class="timeline__org">GHIPSS · Accra, Ghana</p>
+              <ul class="timeline__list">
+                <li>Helped onboard merchants onto digital payment platforms</li>
+                <li>Supported adoption of GHQR payment services</li>
+                <li>Guided customers through portal setup and usage</li>
+                <li>Communicated technical information clearly to customers</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- =============================== -->
+    <!-- PROJECTS -->
+    <!-- =============================== -->
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <p class="eyebrow reveal"><span class="eyebrow__prompt">$</span> ls -la projects/</p>
+        <h2 class="section__title reveal">Projects &amp; Work Samples</h2>
+        <p class="section__lede reveal">Academic labs and personal builds spanning DevOps, systems administration, and networking.</p>
+
+        <div class="filter-bar reveal" role="group" aria-label="Filter projects by category">
+          <button class="filter-btn is-active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="devops">DevOps</button>
+          <button class="filter-btn" data-filter="cloud">Cloud &amp; M365</button>
+          <button class="filter-btn" data-filter="systems">Systems</button>
+          <button class="filter-btn" data-filter="networking">Networking</button>
+        </div>
+
+        <div class="projects__grid" id="projectsGrid">
+          <!-- Project cards are rendered by js/script.js from the PROJECTS data array,
+               so project details stay in one place and are easy to edit or add to. -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Project details modal -->
+    <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+      <div class="modal__backdrop" data-close-modal></div>
+      <div class="modal__panel" role="document">
+        <button class="modal__close" data-close-modal aria-label="Close project details">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+        <div class="modal__body" id="modalBody">
+          <!-- Populated dynamically by script.js -->
+        </div>
+      </div>
+    </div>
+
+    <!-- =============================== -->
+    <!-- EDUCATION -->
+    <!-- =============================== -->
+    <section class="section" id="education">
+      <div class="container">
+        <p class="eyebrow reveal"><span class="eyebrow__prompt">$</span> cat education.yaml</p>
+        <h2 class="section__title reveal">Education</h2>
+
+        <div class="edu-card reveal">
+          <div class="edu-card__head">
+            <h3 class="edu-card__program">Cloud Computing Technologies</h3>
+            <span class="edu-card__dates">May 2026 – Apr 2027</span>
+          </div>
+          <p class="edu-card__school">George Brown College / George Brown Polytechnic — Toronto, Ontario</p>
+
+          <h4 class="edu-card__subhead">Relevant Coursework</h4>
+          <ul class="tag-list">
+            <li>Cloud Technologies</li>
+            <li>Microsoft 365 Administration</li>
+            <li>Windows Server Administration</li>
+            <li>Linux Administration</li>
+            <li>Networking</li>
+            <li>Virtualization</li>
+            <li>Active Directory</li>
+            <li>Security</li>
+            <li>DevOps Foundations</li>
+          </ul>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-card__head">
+            <h3 class="edu-card__program">AWS re/Start Programme</h3>
+            <span class="edu-card__dates">Jan 2025 – Mar 2025</span>
+          </div>
+          <p class="edu-card__school">Amalitech — Accra, Ghana</p>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-card__head">
+            <h3 class="edu-card__program">Bachelor of Arts — Economics &amp; Philosophy</h3>
+            <span class="edu-card__dates">Aug 2018 – Sep 2022</span>
+          </div>
+          <p class="edu-card__school">University of Ghana — Accra, Ghana</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================== -->
+    <!-- CERTIFICATIONS & ACKNOWLEDGEMENTS -->
+    <!-- =============================== -->
+    <section class="section section--alt" id="credentials">
+      <div class="container">
+        <p class="eyebrow reveal"><span class="eyebrow__prompt">$</span> cat credentials.log</p>
+        <h2 class="section__title reveal">Certifications &amp; Acknowledgements</h2>
+
+        <div class="credentials__grid">
+
+          <div class="cred-block reveal">
+            <h3 class="cred-block__title">Certifications</h3>
+            <ul class="cred-list">
+              <li class="cred-list__item">
+                <span class="cred-list__badge" aria-hidden="true">✓</span>
+                <div>
+                  <p class="cred-list__name">AWS Certified Cloud Practitioner</p>
+                  <p class="cred-list__meta">Amazon Web Services</p>
+                </div>
+              </li>
+              <!--
+                CUSTOMIZATION: to add a future certification, copy the <li> block above and
+                update the name and issuing organization. Do not mark a certification as
+                earned until you actually hold it.
+              -->
+              <li class="cred-list__item cred-list__item--placeholder" data-placeholder>
+                <span class="cred-list__badge cred-list__badge--muted" aria-hidden="true">+</span>
+                <div>
+                  <p class="cred-list__name">[REPLACE: FUTURE CERTIFICATION NAME]</p>
+                  <p class="cred-list__meta">[REPLACE: ISSUING ORGANIZATION]</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="cred-block reveal">
+            <h3 class="cred-block__title">Diplomas &amp; Degrees</h3>
+            <!-- CUSTOMIZATION: add a <li> here once a diploma/degree has been conferred. -->
+            <p class="cred-empty">No diplomas or degrees added yet — currently completing the Cloud Computing Technologies diploma.</p>
+          </div>
+
+          <div class="cred-block reveal">
+            <h3 class="cred-block__title">Academic Awards</h3>
+            <!--
+              CUSTOMIZATION: uncomment and edit the block below once an award has been received.
+              <ul class="cred-list">
+                <li class="cred-list__item">
+                  <span class="cred-list__badge" aria-hidden="true">★</span>
+                  <div>
+                    <p class="cred-list__name">[REPLACE: AWARD NAME]</p>
+                    <p class="cred-list__meta">[REPLACE: AWARDING BODY, YEAR]</p>
+                  </div>
+                </li>
+              </ul>
+            -->
+            <p class="cred-empty">No academic awards added.</p>
+          </div>
+
+        </div>
+
+        <!-- Private document cards: transcript & recommendation letter -->
+        <div class="doc-grid reveal" id="privateDocGrid">
+          <!--
+            CUSTOMIZATION: These are private-document cards. If you don't have a transcript or
+            recommendation letter ready, delete the corresponding <article class="doc-card"> block below.
+          -->
+          <article class="doc-card">
+            <div class="doc-card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M7 3h7l4 4v14H7V3Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M14 3v4h4" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="doc-card__title">Unofficial Transcript</h3>
+            <p class="doc-card__desc">Course history from George Brown College. Sensitive identifiers removed before publishing.</p>
+            <!-- REPLACE: DOCUMENT PATH — place the file at assets/documents/Unofficial-Transcript.pdf -->
+            <a class="btn btn--small" href="assets/documents/Unofficial-Transcript.pdf" target="_blank" rel="noopener noreferrer">View Document</a>
+          </article>
+
+          <article class="doc-card">
+            <div class="doc-card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 4h16v12H9l-5 4V4Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="doc-card__title">Letter of Recommendation</h3>
+            <p class="doc-card__desc">A reference letter shared with permission from the author.</p>
+            <!-- REPLACE: DOCUMENT PATH — place the file at assets/documents/Recommendation-Letter.pdf -->
+            <a class="btn btn--small" href="assets/documents/Recommendation-Letter.pdf" target="_blank" rel="noopener noreferrer">View Document</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================== -->
+    <!-- RESUME -->
+    <!-- =============================== -->
+    <section class="section" id="resume">
+      <div class="container">
+        <p class="eyebrow reveal"><span class="eyebrow__prompt">$</span> file resume.pdf</p>
+        <h2 class="section__title reveal">Resume</h2>
+
+        <div class="resume-panel reveal">
+          <div class="resume-panel__info">
+            <h3 class="resume-panel__name">Prinston Sarfo Adu Tutu</h3>
+            <p class="resume-panel__tagline">Cloud Computing Student · Aspiring Cloud &amp; DevOps Engineer</p>
+            <ul class="resume-panel__summary">
+              <li>AWS Certified Cloud Practitioner</li>
+              <li>Cloud, systems administration &amp; networking foundations</li>
+              <li>Hands-on DevOps &amp; Microsoft 365 project experience</li>
+            </ul>
+            <p class="resume-panel__notice" id="resumeNotice" hidden>
+              The resume file hasn't been added yet. Place your PDF at
+              <code>assets/documents/Prinston-Resume.pdf</code> to enable these buttons.
+            </p>
+          </div>
+          <div class="resume-panel__actions">
+            <a href="assets/documents/Prinston-Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn--primary" id="resumeViewBtn">Open Resume</a>
+            <a href="assets/documents/Prinston-Resume.pdf" download class="btn btn--secondary" id="resumeDownloadBtn">Download PDF</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================== -->
+    <!-- CONTACT -->
+    <!-- =============================== -->
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <p class="eyebrow reveal"><span class="eyebrow__prompt">$</span> ping prinston</p>
+        <h2 class="section__title reveal">Contact</h2>
+        <p class="section__lede reveal">
+          I'm open to internship and entry-level opportunities in cloud, DevOps, and IT support.
+          The fastest ways to reach me are below.
+        </p>
+
+        <div class="contact__grid reveal">
+          <div class="contact__card">
+            <span class="contact__label">Email</span>
+            <div class="contact__row">
+              <a href="mailto:Prinstonsarfo9@gmail.com" class="contact__value">Prinstonsarfo9@gmail.com</a>
+              <button class="copy-btn" id="copyEmailBtn" data-email="Prinstonsarfo9@gmail.com" aria-label="Copy email address">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="1.5" stroke="currentColor" stroke-width="1.4"/><path d="M5 15V5a1 1 0 0 1 1-1h10" stroke="currentColor" stroke-width="1.4"/></svg>
+                <span id="copyEmailText">Copy</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="contact__card">
+            <span class="contact__label">Phone</span>
+            <a href="tel:+19425882627" class="contact__value">(942) 588-2627</a>
+          </div>
+
+          <div class="contact__card">
+            <span class="contact__label">LinkedIn</span>
+            <a href="https://www.linkedin.com/in/prinston-sarfo-adu-tutu-aa6944201" target="_blank" rel="noopener noreferrer" class="contact__value">linkedin.com/in/prinston-sarfo-adu-tutu</a>
+          </div>
+
+          <div class="contact__card">
+            <span class="contact__label">GitHub</span>
+            <a href="https://github.com/Prinstonn" target="_blank" rel="noopener noreferrer" class="contact__value">github.com/Prinstonn</a>
+          </div>
+
+          <div class="contact__card">
+            <span class="contact__label">Location</span>
+            <span class="contact__value">Toronto, Ontario, Canada</span>
+          </div>
+        </div>
+
+        <p class="contact__note">
+          This is a static site, so there's no contact form here — the buttons above open your email
+          client or the linked profile directly. If you'd like to add a form later, connect it to a
+          third-party form service (such as Formspree) since a static page can't send email on its own.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =============================== -->
+  <!-- FOOTER -->
+  <!-- =============================== -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p>© <span id="currentYear"></span> Prinston Sarfo Adu Tutu. Built with HTML, CSS &amp; JavaScript.</p>
+      <div class="site-footer__links">
+        <a href="https://github.com/Prinstonn" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/prinston-sarfo-adu-tutu-aa6944201" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="#home">Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top" hidden>
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

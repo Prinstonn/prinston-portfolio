@@ -1,0 +1,15 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
+
+# Node (only relevant if you ever add tooling, e.g. a local dev server package)
+node_modules/
+npm-debug.log*
+
+# Local env files (not used by this static site, included as a safe default)
+.env
+.env.local
